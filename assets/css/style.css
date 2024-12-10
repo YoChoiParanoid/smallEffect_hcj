@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    background-color: #EAEAEA;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    width: 55%;
+    height: 55%;
+    right: 50%;
+    bottom: 50%;
+    padding: 50px;
+    background-color: #F5F5F5;
+    transform: translate(50%, 50%);
+    box-shadow: 0 30px 50px #BDBDBD;
+}
+
+.head-title {
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#slide {
+    width: max-content;
+    margin-top: 25px;
+}
+
+#slide .item {
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    background-position: 50% 50%;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+#slide .item:nth-child(1) {
+    transform: translate(-150%);
+    opacity: 0;
+}
+
+#slide .item:nth-child(2) {
+    transform: translate(-40%);
+}
+
+#slide .item:nth-child(3) {
+    transform: translate(70%);
+}
+
+#slide .item:nth-child(4) {
+    transform: translate(180%);
+}
+
+#slide .item:nth-child(n+5) {
+    transform: translate(290%);
+    opacity: 0;
+}
+
+#slide .item .content {
+    position: absolute;
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    top: 100%;
+    width: 80%;
+    padding: 0 10%;
+    display: inline-block;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 30px 50px #b9b9b9;
+    transition: 0.5s;
+    overflow: hidden;
+    max-height: 0;
+}
+
+#slide .item:hover {
+    border-radius: 20px 20px 0 0;
+}
+
+#slide .item:hover .content {
+    max-height: 50px;
+    padding: 3% 10%;
+}
+
+#slide .item:hover {
+    background-size: 150%;
+}
+
+.contain-button-next,
+.contain-button-prev {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    border-radius: 50%;
+}
+
+.contain-button-next {
+    right: 50px;
+}
+
+.contain-button-prev {
+    left: 50px;
+}
+
+.btn {
+    z-index: 2;
+    background-color: rgba(100, 100, 100, 0.5);
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn.clic {
+    background-color: #3d3d3d !important;
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}

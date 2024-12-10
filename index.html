@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <h1>SMALL PROJECT</h1>
-    <div>
-        <a href="./animated-search-bar/sample/index.html">
-            <p>animated-search-bar</p>
-        </a>
+    <div class="container">
+        <h1 class="head-title">SMALL PROJECT</h1>
+        <div id="slide">
+            <div class="item" style="background-image: url(./assets/img/animated-search-bar.png);">
+                <a class="content" href="./animated-search-bar/sample/index.html">
+                    Search Bar Animation
+                </a>
+            </div>
+            <div class="item" style="background-image: url(./assets/img/animated-search-bar.png);">
+                <a class="content" href="./auto-text-effect-animation/sample/index.html">
+                    Auto Text Animation
+                </a>
+            </div>
+            <div class="item" style="background-image: url(./assets/img/animated-search-bar.png);">
+                <a class="content" href="./button-ripple-effect/sample/index.html">
+                    Button Ripple Animation
+                </a>
+            </div>
+            <div class="item" style="background-image: url(./assets/img/animated-search-bar.png);">
+                <a class="content" href="./heart-trail-animation/sample/index.html">
+                    Heart Trail Animation
+                </a>
+            </div>
+            <div class="item" style="background-image: url(./assets/img/animated-search-bar.png);">
+                <a class="content" href="./pomodoro_timer/sample/index.html">
+                    Pomodoro Timer
+                </a>
+            </div>
+        </div>
     </div>
-    <div>
-        <a href="./auto-text-effect-animation/sample/index.html">
-            <p>auto-text-effect-animation</p>
-        </a>
-    </div>
-    <div>
-        <a href="./button-ripple-effect/sample/index.html">
-            <p>button-ripple-effect</p>
-        </a>
-    </div>
-    <div>
-        <a href="./heart-trail-animation/sample/index.html">
-            <p>heart-trail-animation</p>
-        </a>
-    </div>
-    <div>
-        <a href="./pomodoro_timer/sample/index.html">
-            <p>pomodoro_timer</p>
-        </a>
-    </div>
+    <div class="contain-button-next"><button class="btn" id="btn-next"><i class="fa-solid fa-arrow-right"></i></button></div>
+    <div class="contain-button-prev"><button class="btn" id="btn-prev"><i class="fa-solid fa-arrow-left"></i></button></div>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
